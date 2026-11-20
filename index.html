@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffb3c7">
+<title>Mersipon</title>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mersipon">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+
+<style>
+:root{
+  --pink:#ff8fb1; --pink-d:#e56a93; --pink-l:#ffe3ec; --cream:#fff8f3;
+  --ink:#4a2c3a; --muted:#9a7384; --mint:#7fd8b5; --gold:#ffcf4d; --card:#ffffff;
+  --shadow:0 6px 18px rgba(229,106,147,.18);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{
+  font-family:"Nunito","Quicksand","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  background:linear-gradient(180deg,#ffd6e3 0%,#fff1e8 55%,#fff8f3 100%);
+  color:var(--ink); min-height:100vh; padding:16px 14px 60px;
+}
+.wrap{max-width:520px;margin:0 auto}
+header{text-align:center;margin-bottom:6px}
+h1{margin:0;font-size:34px;letter-spacing:1px;color:var(--pink-d)}
+.tag{margin:2px 0 0;color:var(--muted);font-size:14px}
+
+.hero{background:var(--card);border-radius:28px;box-shadow:var(--shadow);padding:14px 14px 18px;margin-top:12px;text-align:center;position:relative;overflow:hidden}
+.total-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
+.total{font-size:44px;font-weight:900;color:var(--pink-d);margin:0;line-height:1.1;word-break:break-all}
+.pigbox{position:relative;width:240px;height:210px;margin:6px auto 0}
+.pigbox svg{width:100%;height:100%;overflow:visible}
+#pig{transform-origin:50% 80%}
+.bump{animation:bump .45s ease}
+@keyframes bump{0%{transform:scale(1)}30%{transform:scale(1.08,.94)}60%{transform:scale(.97,1.04)}100%{transform:scale(1)}}
+.flycoin{position:absolute;left:50%;top:-10px;width:34px;height:34px;margin-left:-17px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,#fff3b0,var(--gold) 60%,#e0a800);border:3px solid #e0a800;
+  display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px;color:#8a5b00;
+  animation:drop .7s cubic-bezier(.5,0,.8,.6) forwards;pointer-events:none;z-index:3}
+.flycoin.bill{border-radius:6px;width:48px;margin-left:-24px;height:26px;background:linear-gradient(135deg,#d7f5e6,#7fd8b5);border-color:#4fb58d;color:#256b50}
+.flycoin.out{animation:rise .7s ease-out forwards}
+@keyframes drop{0%{transform:translateY(0) rotate(0);opacity:1}80%{opacity:1}100%{transform:translateY(78px) rotate(300deg) scale(.7);opacity:0}}
+@keyframes rise{0%{transform:translateY(78px) scale(.7);opacity:0}30%{opacity:1}100%{transform:translateY(-10px) rotate(-200deg);opacity:0}}
+
+.modes{display:flex;gap:8px;justify-content:center;margin:6px 0 2px}
+.mode{border:2px solid var(--pink-l);background:#fff;border-radius:999px;padding:8px 18px;font-weight:800;color:var(--muted);font-size:14px;cursor:pointer;font-family:inherit}
+.mode.on{background:var(--pink);border-color:var(--pink);color:#fff}
+.mode.out.on{background:#8f7aff;border-color:#8f7aff}
+
+h2{font-size:17px;margin:22px 4px 10px;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.item{background:var(--card);border-radius:20px;box-shadow:var(--shadow);padding:12px 10px;display:flex;align-items:center;gap:10px;cursor:pointer;border:2px solid transparent;font-family:inherit;color:var(--ink);text-align:left;transition:transform .08s}
+.item:active{transform:scale(.96)}
+.item .art{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:50px}
+.coin{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;
+  background:radial-gradient(circle at 30% 30%,#fff3b0,var(--gold) 60%,#e0a800);border:3px solid #e0a800;color:#8a5b00}
+.coin.silver{background:radial-gradient(circle at 30% 30%,#fff,#d8dde4 60%,#aab2bd);border-color:#aab2bd;color:#5b6572}
+.coin.two{background:radial-gradient(circle at 30% 30%,#fff,#d8dde4 55%,#aab2bd);border:5px solid #f1c24b;color:#5b6572}
+.coin.ten{background:radial-gradient(circle at 30% 30%,#fff,#d8dde4 55%,#aab2bd);border:5px solid #f1c24b;color:#5b6572}
+.bill{width:50px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px;border:2px solid rgba(0,0,0,.12);color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.25)}
+.info{display:flex;flex-direction:column;min-width:0}
+.info .name{font-weight:800;font-size:14px}
+.info .cnt{font-size:12px;color:var(--muted)}
+.info .sub{font-size:13px;font-weight:900;color:var(--pink-d)}
+.item.off{opacity:.55}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:12px 8px;text-align:center}
+.stat .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.stat .v{font-size:17px;font-weight:900;color:var(--ink);margin-top:2px;word-break:break-all}
+
+.panel{background:var(--card);border-radius:22px;box-shadow:var(--shadow);padding:14px 16px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed var(--pink-l);font-size:15px}
+.row:last-child{border-bottom:0}
+.row b{color:var(--pink-d);font-size:16px}
+.note{font-size:12px;color:var(--muted);margin:8px 2px 0;line-height:1.4}
+.plan{display:flex;gap:8px;align-items:center;margin-bottom:6px}
+.plan span{font-weight:800}
+input[type=number]{flex:1;min-width:0;font:inherit;font-weight:800;border:2px solid var(--pink-l);border-radius:14px;padding:10px 12px;color:var(--ink);background:#fffafc;outline:none}
+input[type=number]:focus{border-color:var(--pink)}
+.progress{height:14px;background:var(--pink-l);border-radius:999px;overflow:hidden;margin:10px 0 6px}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--gold));border-radius:999px;transition:width .5s}
+
+.hist li{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px dashed var(--pink-l);font-size:14px;list-style:none}
+.hist{margin:0;padding:0}
+.hist .when{font-size:11px;color:var(--muted)}
+.plus{color:#2c9a70;font-weight:900}.minus{color:#7b63e6;font-weight:900}
+.btns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.btn{flex:1;border:0;border-radius:14px;padding:11px 12px;font:inherit;font-weight:800;cursor:pointer;background:var(--pink-l);color:var(--pink-d);min-width:120px}
+.btn.danger{background:#ffe9e9;color:#d64545}
+.empty{text-align:center;color:var(--muted);padding:12px;font-size:14px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;transition:transform .3s;z-index:20}
+.toast.show{transform:translateX(-50%) translateY(0)}
+footer{text-align:center;color:var(--muted);font-size:12px;margin-top:26px}
+.bar{display:none;justify-content:space-between;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin:6px 2px 0}
+.mini{border:0;border-radius:999px;padding:6px 12px;background:var(--pink-l);color:var(--pink-d);font:inherit;font-weight:800;font-size:12px;cursor:pointer}
+.tabs{flex-wrap:wrap}.tabs .mode{padding:8px 12px;font-size:13px}
+.field{width:100%;font:inherit;border:2px solid var(--pink-l);border-radius:14px;padding:10px 12px;margin-bottom:8px;background:#fffafc;color:var(--ink);outline:none}
+.field:focus{border-color:var(--pink)}
+.split{display:flex;height:16px;border-radius:999px;overflow:hidden;background:#8f7aff;margin:12px 0 8px}
+.split i{display:block;height:100%;background:var(--pink);transition:width .5s}
+.dot{width:12px;height:12px;border-radius:50%;flex:0 0 auto;background:#c9bcc3}
+.dot.on{background:#35c98a;box-shadow:0 0 0 4px rgba(53,201,138,.22)}
+.frow{display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:1px dashed var(--pink-l);cursor:pointer}
+.frow:last-child{border-bottom:0}
+.frow .fm{flex:1;min-width:0}
+.frow .fm b{display:block;font-size:16px;color:var(--ink)}
+.frow .fs{font-size:12px;color:var(--muted);margin-top:2px}
+.frow .go{color:var(--pink-d);font-weight:900;font-size:20px}
+.fbtns{display:flex;gap:6px}
+.fbtns .mini{padding:7px 12px}
+.mini.ok{background:var(--mint);color:#17583f}
+.mini.no{background:#ffe9e9;color:#d64545}
+.pres{font-size:13px;font-weight:800;color:var(--ink);margin-top:6px}
+.sub2{font-size:12px;color:var(--muted);margin:4px 4px 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🐷 Mersipon</h1>
+    <p class="tag">Ipon today, proud tomorrow ✨</p>
+  </header>
+
+  <div class="bar" id="bar"><span id="syncTxt"></span><button class="mini" id="acct">Sign in</button></div>
+  <div class="panel" id="login" style="display:none;margin-top:10px">
+    <div style="font-weight:800;margin-bottom:8px" id="liTitle">🔐 Sign in to sync</div>
+    <input class="field" id="liNm" type="text" placeholder="Your name (shown to friends)" autocomplete="nickname" maxlength="24" style="display:none">
+    <input class="field" id="liEm" type="email" placeholder="Email" autocomplete="username">
+    <input class="field" id="liPw" type="password" placeholder="Password (6+ characters)" autocomplete="current-password">
+    <button class="btn" id="liBtn" style="width:100%">Sign in</button>
+    <button class="mini" id="liMode" style="margin-top:10px">New here? Create account</button>
+    <div class="note" id="liMsg"></div>
+  </div>
+  <div class="modes tabs" id="tabs" style="display:none">
+    <button class="mode on" id="tMe">🐷 Me</button>
+    <button class="mode" id="tFr">👥 Friends</button>
+  </div>
+
+<div id="viewMe">
+  <section class="hero">
+    <div class="total-label">Total savings</div>
+    <p class="total" id="total">₱0</p>
+
+    <div class="pigbox" id="pigbox">
+      <svg viewBox="0 0 240 210" aria-label="Piggy bank">
+        <ellipse cx="120" cy="196" rx="78" ry="8" fill="#000" opacity=".08"/>
+        <g id="pig">
+          <!-- tail -->
+          <path d="M42 110 C22 100 20 80 34 78 C44 77 38 92 30 90" fill="none" stroke="#e56a93" stroke-width="5" stroke-linecap="round"/>
+          <!-- legs -->
+          <rect x="70" y="150" width="26" height="36" rx="12" fill="#f27da1"/>
+          <rect x="144" y="150" width="26" height="36" rx="12" fill="#f27da1"/>
+          <!-- body -->
+          <ellipse cx="116" cy="112" rx="82" ry="58" fill="#ff8fb1"/>
+          <ellipse cx="108" cy="92" rx="52" ry="26" fill="#ffb3c9" opacity=".55"/>
+          <!-- ear -->
+          <path d="M138 60 L150 30 L170 56 Z" fill="#f27da1"/>
+          <path d="M147 55 L152 40 L162 54 Z" fill="#ffc2d4"/>
+          <!-- snout -->
+          <ellipse cx="196" cy="116" rx="26" ry="20" fill="#f27da1"/>
+          <ellipse cx="190" cy="116" rx="4.5" ry="7" fill="#b83e68"/>
+          <ellipse cx="204" cy="116" rx="4.5" ry="7" fill="#b83e68"/>
+          <!-- eye -->
+          <circle cx="164" cy="92" r="7" fill="#4a2c3a"/>
+          <circle cx="166" cy="89.5" r="2.4" fill="#fff"/>
+          <!-- blush -->
+          <ellipse cx="156" cy="112" rx="9" ry="5.5" fill="#ff6f9c" opacity=".55"/>
+          <!-- coin slot -->
+          <rect x="92" y="56" width="46" height="8" rx="4" fill="#9b2f58"/>
+          <!-- smile -->
+          <path d="M184 134 Q196 142 208 132" fill="none" stroke="#b83e68" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="modes">
+      <button class="mode on" id="modeIn">➕ Insert</button>
+      <button class="mode out" id="modeOut">➖ Take out</button>
+    </div>
+  </section>
+
+  <h2 id="pickTitle">Tap what you put inside</h2>
+  <div style="margin:-4px 4px 8px;font-size:13px;color:var(--muted)">Coins</div>
+  <div class="grid" id="coins"></div>
+  <div style="margin:14px 4px 8px;font-size:13px;color:var(--muted)">Bills</div>
+  <div class="grid" id="bills"></div>
+
+  <h2>📅 Your ipon</h2>
+  <div class="cards">
+    <div class="stat"><div class="l">Today</div><div class="v" id="sToday">₱0</div></div>
+    <div class="stat"><div class="l">This week</div><div class="v" id="sWeek">₱0</div></div>
+    <div class="stat"><div class="l">This month</div><div class="v" id="sMonth">₱0</div></div>
+  </div>
+
+  <h2>🔮 How much could I earn?</h2>
+  <div class="panel">
+    <div style="font-weight:800;margin-bottom:4px">Based on your average so far</div>
+    <div class="row"><span>Per hour</span><b id="pHour">₱0</b></div>
+    <div class="row"><span>Per day</span><b id="pDay">₱0</b></div>
+    <div class="row"><span>Per week</span><b id="pWeek">₱0</b></div>
+    <div class="row"><span>Per month</span><b id="pMonth">₱0</b></div>
+    <div class="row"><span>Per year</span><b id="pYear">₱0</b></div>
+    <div class="note" id="avgNote"></div>
+  </div>
+
+  <div class="panel" style="margin-top:12px">
+    <div style="font-weight:800;margin-bottom:8px">💡 What if I save a set amount a day?</div>
+    <div class="plan"><span>₱</span><input type="number" id="planIn" min="0" step="any" inputmode="decimal" placeholder="e.g. 20"><span>/day</span></div>
+    <div class="row"><span>Per week</span><b id="wWeek">₱0</b></div>
+    <div class="row"><span>Per month</span><b id="wMonth">₱0</b></div>
+    <div class="row"><span>Per year</span><b id="wYear">₱0</b></div>
+  </div>
+
+  <h2>🎯 My goal</h2>
+  <div class="panel">
+    <div class="plan"><span>₱</span><input type="number" id="goalIn" min="0" step="any" inputmode="decimal" placeholder="Set a goal amount"></div>
+    <div class="progress"><i id="goalBar"></i></div>
+    <div class="note" id="goalNote">Set a goal and watch the bar fill up.</div>
+  </div>
+
+  <h2>🧾 History</h2>
+  <div class="panel">
+    <ul class="hist" id="hist"></ul>
+    <div class="btns">
+      <button class="btn" id="undo">↩️ Undo last</button>
+      <button class="btn danger" id="reset">🗑️ Reset all</button>
+    </div>
+  </div>
+
+</div>
+
+<div id="viewFr" style="display:none">
+  <div id="frMain">
+    <h2>➕ Add a friend</h2>
+    <div class="panel">
+      <input class="field" id="frEm" type="email" placeholder="Friend's email" autocomplete="off">
+      <button class="btn" id="frAdd" style="width:100%">Send request</button>
+      <div class="note" id="frMsg">They need to create an account first, then they can accept your request.</div>
+    </div>
+    <div id="frReqBox" style="display:none"><h2>📩 Requests</h2><div class="panel" id="frReq"></div></div>
+    <h2>👥 Friends</h2>
+    <div class="panel" id="frList"></div>
+    <div id="frSentBox" style="display:none"><h2>⏳ Waiting for them</h2><div class="panel" id="frSent"></div></div>
+  </div>
+
+  <div id="frDet" style="display:none">
+    <div style="margin-top:10px"><button class="mini" id="frBack">← Friends</button></div>
+    <section class="hero">
+      <div class="total-label" id="oName">Total savings</div>
+      <p class="total" id="oTotal">₱0</p>
+      <div class="pres" id="oPres"></div>
+      <div class="note" id="oNote"></div>
+    </section>
+    <h2>📅 Their ipon</h2>
+    <div class="cards">
+      <div class="stat"><div class="l">Today</div><div class="v" id="oToday">₱0</div></div>
+      <div class="stat"><div class="l">This week</div><div class="v" id="oWeek">₱0</div></div>
+      <div class="stat"><div class="l">This month</div><div class="v" id="oMonth">₱0</div></div>
+    </div>
+    <h2>🎯 Their goal</h2>
+    <div class="panel"><div class="progress"><i id="oBar"></i></div><div class="note" id="oGoal"></div></div>
+    <h2>🧾 Recent</h2>
+    <div class="panel"><ul class="hist" id="oHist"></ul></div>
+    <div class="btns"><button class="btn danger" id="frRemove">Remove friend</button></div>
+  </div>
+</div>
+
+  <footer>Mersipon works offline. Your savings are saved on this phone first, then synced when you are signed in and online. Friends see your bank and whether you are online. 💗</footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  /* ===== PASTE YOUR SUPABASE DETAILS HERE (leave as is to use without sync) ===== */
+  var CFG={url:'https://ohnwzdzholtggtsavqcl.supabase.co',key:'sb_publishable_qZoe1yL7rOoE6j2_Gx2k6w_BTYpYAOg'};
+  var ON=CFG.url.indexOf('http')===0;
+  var KEY='mersipon_v1';
+  var DENOMS=[
+    {id:'c1',v:1,k:'coin',cls:'silver',label:'₱1 coin'},
+    {id:'c5',v:5,k:'coin',cls:'silver',label:'₱5 coin'},
+    {id:'c10',v:10,k:'coin',cls:'ten',label:'₱10 coin'},
+    {id:'c20',v:20,k:'coin',cls:'',label:'₱20 coin'},
+    {id:'b20',v:20,k:'bill',color:'#f2994a',label:'₱20 bill'},
+    {id:'b50',v:50,k:'bill',color:'#e8566b',label:'₱50 bill'},
+    {id:'b100',v:100,k:'bill',color:'#8f7aff',label:'₱100 bill'},
+    {id:'b200',v:200,k:'bill',color:'#4fb58d',label:'₱200 bill'},
+    {id:'b500',v:500,k:'bill',color:'#f0c419',label:'₱500 bill'},
+    {id:'b1000',v:1000,k:'bill',color:'#4a8fe0',label:'₱1000 bill'}
+  ];
+  var byId={};DENOMS.forEach(function(d){byId[d.id]=d});
+
+  var state={entries:[],goal:0,plan:0};
+  var mode='in';
+  try{var raw=localStorage.getItem(KEY);if(raw){var p=JSON.parse(raw);if(p&&p.entries){state=p}}}catch(e){}
+  function uid(){return'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){var r=Math.random()*16|0;return(c==='x'?r:(r&3|8)).toString(16)})}
+  function act(){return state.entries.filter(function(e){return !e.x})}
+  state.entries.forEach(function(e){if(!e.id){e.id=uid();e.s=0}});
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+
+  function $(id){return document.getElementById(id)}
+  function peso(n){
+    var neg=n<0;n=Math.abs(n);
+    var s=n.toLocaleString('en-PH',{minimumFractionDigits:(n%1?2:0),maximumFractionDigits:2});
+    return (neg?'-':'')+'₱'+s;
+  }
+  function counts(){
+    var c={};DENOMS.forEach(function(d){c[d.id]=0});
+    act().forEach(function(e){if(c[e.d]!==undefined)c[e.d]+=e.n});
+    return c;
+  }
+  function startOfDay(t){var d=new Date(t);d.setHours(0,0,0,0);return d.getTime()}
+  function sumSince(ts){
+    var s=0;act().forEach(function(e){if(e.t>=ts)s+=e.n*byId[e.d].v});return s;
+  }
+  function toast(msg){
+    var t=$('toast');t.textContent=msg;t.classList.add('show');
+    clearTimeout(toast._t);toast._t=setTimeout(function(){t.classList.remove('show')},1800);
+  }
+
+  function artHTML(d){
+    if(d.k==='coin')return '<div class="coin '+d.cls+'">'+d.v+'</div>';
+    return '<div class="bill" style="background:'+d.color+'">'+d.v+'</div>';
+  }
+
+  function buildButtons(){
+    var coins=$('coins'),bills=$('bills');coins.innerHTML='';bills.innerHTML='';
+    DENOMS.forEach(function(d){
+      var b=document.createElement('button');
+      b.className='item';b.id='btn_'+d.id;
+      b.innerHTML='<div class="art">'+artHTML(d)+'</div><div class="info"><span class="name">'+d.label+'</span><span class="cnt" id="cnt_'+d.id+'">0 pcs</span><span class="sub" id="sub_'+d.id+'">₱0</span></div>';
+      b.addEventListener('click',function(){tap(d)});
+      (d.k==='coin'?coins:bills).appendChild(b);
+    });
+  }
+
+  function animate(d,out){
+    var box=$('pigbox');var f=document.createElement('div');
+    f.className='flycoin '+(d.k==='bill'?'bill ':'')+(out?'out':'');
+    f.textContent='₱'+d.v;box.appendChild(f);
+    setTimeout(function(){if(f.parentNode)f.parentNode.removeChild(f)},750);
+    var pig=$('pig');pig.classList.remove('bump');void pig.getBoundingClientRect();pig.classList.add('bump');
+  }
+
+  function tap(d){
+    var c=counts();
+    if(mode==='out'){
+      if(c[d.id]<=0){toast('No '+d.label+' inside to take out');return}
+      state.entries.push({id:uid(),t:Date.now(),d:d.id,n:-1,s:0});
+      animate(d,true);
+    }else{
+      state.entries.push({id:uid(),t:Date.now(),d:d.id,n:1,s:0});
+      animate(d,false);
+    }
+    save();render();qsync();
+  }
+
+  function setMode(m){
+    mode=m;
+    $('modeIn').classList.toggle('on',m==='in');
+    $('modeOut').classList.toggle('on',m==='out');
+    $('pickTitle').textContent=m==='in'?'Tap what you put inside':'Tap what you took out';
+  }
+  $('modeIn').addEventListener('click',function(){setMode('in')});
+  $('modeOut').addEventListener('click',function(){setMode('out')});
+
+  function fmtWhen(t){
+    var d=new Date(t);
+    return d.toLocaleDateString('en-PH',{month:'short',day:'numeric'})+' · '+d.toLocaleTimeString('en-PH',{hour:'numeric',minute:'2-digit'});
+  }
+
+  function render(){
+    var c=counts(),total=0;
+    DENOMS.forEach(function(d){
+      var n=c[d.id],sub=n*d.v;total+=sub;
+      $('cnt_'+d.id).textContent=n+(n===1?' pc':' pcs');
+      $('sub_'+d.id).textContent=peso(sub);
+      $('btn_'+d.id).classList.toggle('off',n===0&&mode==='out');
+    });
+    $('total').textContent=peso(total);
+
+    var now=Date.now(),sod=startOfDay(now);
+    var wd=new Date(sod),dow=(wd.getDay()+6)%7;wd.setDate(wd.getDate()-dow);
+    var md=new Date(sod);md.setDate(1);
+    $('sToday').textContent=peso(sumSince(sod));
+    $('sWeek').textContent=peso(sumSince(wd.getTime()));
+    $('sMonth').textContent=peso(sumSince(md.getTime()));
+
+    // averages
+    var avgDay=0;
+    var A=act();
+    if(A.length){
+      var first=A[0].t;A.forEach(function(e){if(e.t<first)first=e.t});
+      var days=Math.floor((sod-startOfDay(first))/86400000)+1;
+      avgDay=total/days;
+      $('avgNote').textContent='Average of '+peso(avgDay)+' a day over '+days+(days===1?' day':' days')+'. The more days you save, the more accurate this gets!';
+    }else{
+      $('avgNote').textContent='Start inserting coins and bills to see your projections.';
+    }
+    $('pHour').textContent=peso(Math.round(avgDay/24*100)/100);
+    $('pDay').textContent=peso(Math.round(avgDay*100)/100);
+    $('pWeek').textContent=peso(Math.round(avgDay*7*100)/100);
+    $('pMonth').textContent=peso(Math.round(avgDay*30*100)/100);
+    $('pYear').textContent=peso(Math.round(avgDay*365*100)/100);
+
+    // plan
+    var pl=parseFloat(state.plan)||0;
+    $('wWeek').textContent=peso(pl*7);
+    $('wMonth').textContent=peso(pl*30);
+    $('wYear').textContent=peso(pl*365);
+
+    // goal
+    var g=parseFloat(state.goal)||0;
+    if(g>0){
+      var pct=Math.max(0,Math.min(100,total/g*100));
+      $('goalBar').style.width=pct+'%';
+      if(total>=g){$('goalNote').textContent='🎉 Goal reached! Amazing job!'}
+      else{
+        var left=g-total,txt=peso(left)+' to go ('+Math.floor(pct)+'% done).';
+        if(avgDay>0){txt+=' At your pace, about '+Math.ceil(left/avgDay)+' more days.'}
+        else if(pl>0){txt+=' At '+peso(pl)+'/day, about '+Math.ceil(left/pl)+' more days.'}
+        $('goalNote').textContent=txt;
+      }
+    }else{
+      $('goalBar').style.width='0%';
+      $('goalNote').textContent='Set a goal and watch the bar fill up.';
+    }
+
+    // history
+    var h=$('hist');h.innerHTML='';
+    if(!act().length){h.innerHTML='<div class="empty">Nothing yet. Your piggy is hungry! 🐷</div>'}
+    else{
+      act().slice(-30).reverse().forEach(function(e){
+        var d=byId[e.d];if(!d)return;
+        var li=document.createElement('li');
+        li.innerHTML='<div><div>'+d.label+'</div><div class="when">'+fmtWhen(e.t)+'</div></div><div class="'+(e.n>0?'plus':'minus')+'">'+(e.n>0?'+':'-')+peso(d.v)+'</div>';
+        h.appendChild(li);
+      });
+    }
+  }
+
+  $('undo').addEventListener('click',function(){
+    var A=act();if(!A.length){toast('Nothing to undo');return}
+    var e=A[A.length-1];e.x=1;e.s=0;save();render();qsync();toast('Last entry undone');
+  });
+  $('reset').addEventListener('click',function(){
+    if(!act().length&&!state.goal){toast('Already empty');return}
+    if(confirm('Reset everything? This clears all your savings records, including your synced copy.')){
+      state.entries.forEach(function(e){e.x=1;e.s=0});state.goal=0;state.plan=0;state.sd=1;save();
+      $('goalIn').value='';$('planIn').value='';render();qsync();toast('All cleared');
+    }
+  });
+  $('goalIn').addEventListener('input',function(e){state.goal=e.target.value;state.sd=1;save();render();qsync()});
+  $('planIn').addEventListener('input',function(e){state.plan=e.target.value;state.sd=1;save();render();qsync()});
+  if(state.goal)$('goalIn').value=state.goal;
+  if(state.plan)$('planIn').value=state.plan;
+
+  /* ===== ACCOUNT, SYNC, FRIENDS ===== */
+  var SK='mersipon_sess',FK='mersipon_friends',view='Me',syncing=false,beating=false,st,sel=null,signup=false;
+  var sess=null,friends=[],fd={};
+  try{sess=JSON.parse(localStorage.getItem(SK))}catch(e){}
+  try{var ff=JSON.parse(localStorage.getItem(FK));if(ff&&ff.list){friends=ff.list;fd=ff.fd||{}}}catch(e){}
+  function put(k,v){try{v?localStorage.setItem(k,JSON.stringify(v)):localStorage.removeItem(k)}catch(e){}}
+  function cap(x){return x?x.charAt(0).toUpperCase()+x.slice(1):x}
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+  function myName(){return sess?(sess.name||cap(sess.email.split('@')[0])):''}
+  function qsync(){if(!ON)return;clearTimeout(st);st=setTimeout(sync,1200)}
+  function saveF(){put(FK,{list:friends,fd:fd})}
+  function dur(s){
+    s=Math.max(0,Math.floor(s));
+    if(s<60)return s+'s';
+    if(s<3600)return Math.floor(s/60)+'m '+(s%60)+'s';
+    if(s<86400)return Math.floor(s/3600)+'h '+Math.floor(s%3600/60)+'m';
+    return Math.floor(s/86400)+'d '+Math.floor(s%86400/3600)+'h';
+  }
+
+  function setSess(j,name){
+    var um=(j.user&&j.user.user_metadata)||{};
+    sess={at:j.access_token,rt:j.refresh_token,exp:j.expires_at||Math.floor(Date.now()/1000)+j.expires_in,uid:j.user.id,email:j.user.email,name:name||um.name||(sess&&sess.name)||''};
+    put(SK,sess);
+  }
+  async function auth(body,grant){
+    var r=await fetch(CFG.url+'/auth/v1/token?grant_type='+grant,{method:'POST',headers:{apikey:CFG.key,'Content-Type':'application/json'},body:JSON.stringify(body)});
+    var j=await r.json();
+    if(!r.ok){if(grant==='refresh_token'){sess=null;put(SK,null)}throw new Error(j.error_description||j.msg||'Sign in failed')}
+    setSess(j);
+  }
+  async function signUp(name,em,pw){
+    var r=await fetch(CFG.url+'/auth/v1/signup',{method:'POST',headers:{apikey:CFG.key,'Content-Type':'application/json'},body:JSON.stringify({email:em,password:pw,data:{name:name}})});
+    var j=await r.json();
+    if(!r.ok)throw new Error(j.msg||j.error_description||j.message||'Could not create account');
+    if(!j.access_token)return false;
+    setSess(j,name);return true;
+  }
+  async function rest(path,opt){
+    if(!sess)throw new Error('Please sign in again');
+    if(sess.exp-60<Date.now()/1000)await auth({refresh_token:sess.rt},'refresh_token');
+    opt=opt||{};
+    opt.headers=Object.assign({apikey:CFG.key,Authorization:'Bearer '+sess.at,'Content-Type':'application/json'},opt.headers||{});
+    var r=await fetch(CFG.url+'/rest/v1/'+path,opt);
+    if(!r.ok)throw new Error('Sync error '+r.status);
+    return r.status===204?null:r.json();
+  }
+  function rpc(name,args){return rest('rpc/'+name,{method:'POST',body:JSON.stringify(args||{})})}
+  async function pull(filter){
+    var out=[],o=0,r;
+    do{r=await rest('entries?select=id,denom,n,t,deleted&'+filter+'&order=t.asc,id.asc&limit=1000&offset='+o);out=out.concat(r);o+=1000}while(r.length===1000);
+    return out;
+  }
+  var UP={Prefer:'resolution=merge-duplicates,return=minimal'};
+
+  function upd(msg){
+    if(!ON)return;
+    var n=state.entries.filter(function(e){return !e.s}).length,q=n?n+' waiting to sync':'all saved';
+    $('syncTxt').textContent=msg||(!sess?'Saved on this phone only':!navigator.onLine?'Offline · '+q:n?'⏳ '+q:'✓ Synced · '+myName());
+    $('acct').textContent=sess?'Sign out':'Sign in / Sign up';
+    $('tabs').style.display=sess?'':'none';
+    if(!sess&&view!=='Me')setView('Me');
+  }
+
+  async function sync(){
+    if(!ON||!sess||syncing||!navigator.onLine){upd();return}
+    syncing=true;upd('Syncing…');var msg=null;
+    try{
+      var pend=state.entries.filter(function(e){return !e.s});
+      if(pend.length){
+        var rows=pend.map(function(e){return{id:e.id,denom:e.d,value:byId[e.d].v,n:e.n,t:e.t,deleted:!!e.x}});
+        await rest('entries?on_conflict=id',{method:'POST',headers:UP,body:JSON.stringify(rows)});
+        pend.forEach(function(e,i){if(!!e.x===rows[i].deleted)e.s=1});
+      }
+      var me=sess.uid,setts=await rest('settings?select=*&user_id=eq.'+me),mine=setts[0];
+      if(mine&&!state.sd){
+        state.goal=mine.goal>0?mine.goal:0;state.plan=mine.plan>0?mine.plan:0;
+        if(document.activeElement!==$('goalIn'))$('goalIn').value=state.goal||'';
+        if(document.activeElement!==$('planIn'))$('planIn').value=state.plan||'';
+      }
+      if(!mine||state.sd){
+        var snap=state.goal+'|'+state.plan;
+        await rest('settings?on_conflict=user_id',{method:'POST',headers:UP,body:JSON.stringify({user_id:me,goal:parseFloat(state.goal)||0,plan:parseFloat(state.plan)||0})});
+        if(snap===state.goal+'|'+state.plan)state.sd=0;
+      }
+      var all=await pull('user_id=eq.'+me),byid={};
+      state.entries.forEach(function(e){byid[e.id]=e});
+      all.forEach(function(r){
+        var e=byid[r.id];
+        if(!e){if(byId[r.denom])state.entries.push({id:r.id,t:r.t,d:r.denom,n:r.n,s:1,x:r.deleted?1:0})}
+        else if(e.s&&!!e.x!==r.deleted)e.x=r.deleted?1:0;
+      });
+      state.entries.sort(function(a,b){return a.t-b.t});
+      await loadFriends();
+    }catch(e){if(!(e instanceof TypeError))msg='⚠ '+e.message}
+    syncing=false;save();render();upd(msg);
+  }
+
+  /* ----- friends + presence ----- */
+  async function loadFriends(){
+    var r=await rpc('friends_overview'),now=Date.now();
+    friends=(r||[]).map(function(x){return{uid:x.user_id,name:x.name,email:x.email,st:x.status,inc:!!x.incoming,ago:x.secs_ago,on:x.secs_online,got:now}});
+    if(sel&&!friends.some(function(f){return f.uid===sel&&f.st==='accepted'}))sel=null;
+    saveF();
+  }
+  async function pullFriend(uid){
+    var rows=await pull('user_id=eq.'+uid),s=await rest('settings?select=goal&user_id=eq.'+uid),pe=[];
+    rows.forEach(function(r){if(!r.deleted&&byId[r.denom])pe.push({t:r.t,d:r.denom,n:r.n})});
+    fd[uid]={entries:pe,goal:(s&&s[0]&&s[0].goal)||0,at:Date.now()};saveF();
+  }
+  async function beat(){
+    if(!ON||!sess||!navigator.onLine||document.hidden||beating)return;
+    beating=true;
+    try{
+      await rpc('heartbeat',{p_name:myName()});
+      await loadFriends();
+      if(view==='Fr'&&sel)await pullFriend(sel);
+    }catch(e){}
+    beating=false;renderFriends();
+  }
+  function presence(f){
+    if(f.ago==null)return '⚪ Offline · not seen yet';
+    var el=(Date.now()-f.got)/1000,a=f.ago+el;
+    if(a<30)return '🟢 Online · came online '+dur((f.on==null?a:f.on)+el)+' ago';
+    return '⚪ Offline · last seen '+dur(a)+' ago';
+  }
+  function isOn(f){return f.ago!=null&&f.ago+(Date.now()-f.got)/1000<30}
+  function getF(uid){for(var i=0;i<friends.length;i++)if(friends[i].uid===uid)return friends[i]}
+
+  function stats(list){
+    var sod=startOfDay(Date.now()),w=new Date(sod),m=new Date(sod),r={total:0,td:0,wk:0,mo:0};
+    w.setDate(w.getDate()-(w.getDay()+6)%7);m.setDate(1);
+    list.forEach(function(e){var v=e.n*byId[e.d].v;r.total+=v;if(e.t>=sod)r.td+=v;if(e.t>=w.getTime())r.wk+=v;if(e.t>=m.getTime())r.mo+=v});
+    return r;
+  }
+
+  function renderFriends(){
+    if(!ON||!sess)return;
+    var acc=friends.filter(function(f){return f.st==='accepted'}),
+        inc=friends.filter(function(f){return f.st==='pending'&&f.inc}),
+        out=friends.filter(function(f){return f.st==='pending'&&!f.inc});
+    $('tFr').textContent='👥 Friends'+(inc.length?' ('+inc.length+')':'');
+    if(view!=='Fr')return;
+    $('frMain').style.display=sel?'none':'';
+    $('frDet').style.display=sel?'':'none';
+    $('frReqBox').style.display=inc.length?'':'none';
+    $('frSentBox').style.display=out.length?'':'none';
+    $('frReq').innerHTML=inc.map(function(f){
+      return '<div class="frow" style="cursor:default"><div class="fm"><b>'+esc(cap(f.name))+'</b><div class="fs">'+esc(f.email)+'</div></div><div class="fbtns"><button class="mini ok" data-act="yes" data-u="'+esc(f.uid)+'">Accept</button><button class="mini no" data-act="no" data-u="'+esc(f.uid)+'">Decline</button></div></div>';
+    }).join('');
+    $('frSent').innerHTML=out.map(function(f){
+      return '<div class="frow" style="cursor:default"><div class="fm"><b>'+esc(cap(f.name))+'</b><div class="fs">'+esc(f.email)+' · not accepted yet</div></div><button class="mini no" data-act="rm" data-u="'+esc(f.uid)+'">Cancel</button></div>';
+    }).join('');
+    $('frList').innerHTML=acc.length?acc.map(function(f){
+      return '<div class="frow" data-act="open" data-u="'+esc(f.uid)+'"><span class="dot'+(isOn(f)?' on':'')+'" data-d="'+esc(f.uid)+'"></span><div class="fm"><b>'+esc(cap(f.name))+'</b><div class="fs" data-p="'+esc(f.uid)+'">'+esc(presence(f))+'</div></div><span class="go">›</span></div>';
+    }).join(''):'<div class="empty">No friends yet. Add one above 💗</div>';
+
+    if(sel){
+      var f=getF(sel),d=fd[sel]||{entries:[],goal:0,at:0},o=stats(d.entries),nm=cap(f.name||'Friend');
+      $('oName').textContent=nm+'’s total savings';
+      $('oTotal').textContent=peso(o.total);
+      $('oToday').textContent=peso(o.td);$('oWeek').textContent=peso(o.wk);$('oMonth').textContent=peso(o.mo);
+      var g=parseFloat(d.goal)||0,pct=g>0?Math.max(0,Math.min(100,o.total/g*100)):0;
+      $('oBar').style.width=pct+'%';
+      $('oGoal').textContent=g>0?(o.total>=g?'🎉 Goal reached!':peso(g-o.total)+' to go ('+Math.floor(pct)+'% of '+peso(g)+')'):nm+' has not set a goal yet.';
+      var h=$('oHist');h.innerHTML='';
+      if(!d.entries.length)h.innerHTML='<div class="empty">Nothing here yet.</div>';
+      d.entries.slice(-30).reverse().forEach(function(e){
+        var dn=byId[e.d],li=document.createElement('li');
+        li.innerHTML='<div><div>'+dn.label+'</div><div class="when">'+fmtWhen(e.t)+'</div></div><div class="'+(e.n>0?'plus':'minus')+'">'+(e.n>0?'+':'-')+peso(dn.v)+'</div>';
+        h.appendChild(li);
+      });
+      tick();
+    }
+  }
+  function tick(){
+    if(!sess||view!=='Fr')return;
+    friends.forEach(function(f){
+      if(f.st!=='accepted')return;
+      var p=document.querySelector('[data-p="'+f.uid+'"]'),dt=document.querySelector('[data-d="'+f.uid+'"]');
+      if(p)p.textContent=presence(f);
+      if(dt)dt.classList.toggle('on',isOn(f));
+    });
+    if(sel){
+      var f=getF(sel),d=fd[sel];
+      if(f)$('oPres').textContent=presence(f);
+      $('oNote').textContent=d&&d.at?'🔄 Live · bank updated '+dur((Date.now()-d.at)/1000)+' ago':'Loading…';
+    }
+  }
+  var _render=render;render=function(){_render();renderFriends()};
+
+  function setView(v){
+    view=v;
+    ['Me','Fr'].forEach(function(k){$('view'+k).style.display=k===v?'':'none';$('t'+k).classList.toggle('on',k===v)});
+    renderFriends();
+    if(v==='Fr'&&sess)beat();
+  }
+  ['Me','Fr'].forEach(function(k){$('t'+k).addEventListener('click',function(){setView(k)})});
+
+  function openFriend(uid){
+    sel=uid;renderFriends();
+    pullFriend(uid).then(renderFriends).catch(function(){});
+  }
+  $('frBack').addEventListener('click',function(){sel=null;renderFriends()});
+  async function frAct(act,uid){
+    try{
+      if(act==='open'){openFriend(uid);return}
+      if(act==='yes'||act==='no')await rpc('respond_friend_request',{p_user:uid,p_accept:act==='yes'});
+      if(act==='rm')await rpc('remove_friend',{p_user:uid});
+      await loadFriends();renderFriends();
+      if(act==='yes')toast('Friend added 🎉');
+    }catch(e){toast(e instanceof TypeError?'You are offline':'Something went wrong')}
+  }
+  function onClick(e){
+    var t=e.target.closest('[data-act]');if(!t)return;
+    frAct(t.getAttribute('data-act'),t.getAttribute('data-u'));
+  }
+  $('frReq').addEventListener('click',onClick);
+  $('frSent').addEventListener('click',onClick);
+  $('frList').addEventListener('click',onClick);
+  $('frRemove').addEventListener('click',async function(){
+    if(!sel)return;
+    if(confirm('Remove this friend? You will stop seeing each other.')){
+      try{await rpc('remove_friend',{p_user:sel});sel=null;await loadFriends();renderFriends();toast('Friend removed')}catch(e){toast('Could not remove right now')}
+    }
+  });
+  $('frAdd').addEventListener('click',async function(){
+    var em=$('frEm').value.trim().toLowerCase(),msg=$('frMsg');
+    if(!em){msg.textContent='Enter your friend’s email.';return}
+    msg.textContent='Sending…';
+    try{
+      var r=await rpc('send_friend_request',{p_email:em});
+      var M={sent:'Request sent! Waiting for them to accept. 💌',not_found:'No account with that email yet. Ask them to create one first.',self:'That is your own email 🙂',exists:'You are already friends.',sent_already:'You already sent a request. Waiting for them to accept.',incoming:'They already sent you a request. Accept it under Requests.'};
+      msg.textContent=M[r]||'Done.';
+      if(r==='sent')$('frEm').value='';
+      await loadFriends();renderFriends();
+    }catch(e){msg.textContent=e instanceof TypeError?'No internet. Try again when you are online.':'⚠ '+e.message+' (did you run the SQL setup?)'}
+  });
+
+  /* ----- account ----- */
+  $('acct').addEventListener('click',function(){
+    if(sess){
+      if(confirm('Sign out? Entries that have not synced yet stay on this phone.')){
+        sess=null;put(SK,null);friends=[];fd={};sel=null;put(FK,null);setView('Me');upd();toast('Signed out');
+      }
+    }else{var l=$('login');l.style.display=l.style.display==='none'?'':'none'}
+  });
+  function setAuthMode(s){
+    signup=s;
+    $('liNm').style.display=s?'':'none';
+    $('liTitle').textContent=s?'✨ Create your account':'🔐 Sign in to sync';
+    $('liBtn').textContent=s?'Create account':'Sign in';
+    $('liMode').textContent=s?'Already have an account? Sign in':'New here? Create account';
+    $('liPw').setAttribute('autocomplete',s?'new-password':'current-password');
+    $('liMsg').textContent='';
+  }
+  $('liMode').addEventListener('click',function(){setAuthMode(!signup)});
+  $('liBtn').addEventListener('click',async function(){
+    var nm=$('liNm').value.trim(),em=$('liEm').value.trim(),pw=$('liPw').value,msg=$('liMsg');
+    if(!em||!pw){msg.textContent='Enter your email and password.';return}
+    if(signup&&!nm){msg.textContent='Enter your name so your friend knows it is you.';return}
+    if(signup&&pw.length<6){msg.textContent='Password needs at least 6 characters.';return}
+    msg.textContent=signup?'Creating account…':'Signing in…';
+    try{
+      if(signup){
+        var ok=await signUp(nm,em,pw);
+        if(!ok){msg.textContent='Account created! Check your email to confirm it, then sign in.';setAuthMode(false);return}
+      }else await auth({email:em,password:pw},'password');
+      $('liPw').value='';$('login').style.display='none';msg.textContent='';
+      if(state.goal||state.plan)state.sd=1;
+      save();upd();toast(signup?'Welcome, '+myName()+'! 🎉':'Signed in');sync();beat();
+    }catch(e){msg.textContent=e instanceof TypeError?'No internet. Try again when you are online.':e.message}
+  });
+
+  if(ON){
+    $('bar').style.display='flex';
+    window.addEventListener('online',function(){sync();beat()});
+    window.addEventListener('offline',function(){upd()});
+    document.addEventListener('visibilitychange',function(){if(!document.hidden){sync();beat()}});
+    setInterval(sync,60000);
+    setInterval(beat,10000);
+    setInterval(tick,1000);
+    upd();sync();beat();
+  }
+
+  buildButtons();render();
+})();
+</script>
+</body>
+</html>
